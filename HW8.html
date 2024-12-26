@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="HW8.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>JS Calculator</h1>
+        <form id="calculator-form">
+            <label for="number1">Number 1</label>
+            <input type="number" id="number1" step="0.01" required>
+            
+            <label for="number2">Number 2</label>
+            <input type="number" id="number2" step="0.01" required>
+            
+            <label for="operation">Operate way?</label>
+            <select id="operation">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+            <button type="button" id="calculate-btn">Calculate</button>
+        </form>
+        <p id="result">Result = 0.00</p>
+    </div>
+    <script src="HW8.js"></script>
+</body>
+</html>
